@@ -6,7 +6,6 @@
   },
   "rules": {
     "no-new": "off",
-    "class-methods-use-this": "off",
-    "no-underscore-dangle": "off"
+    "class-methods-use-this": "off"
   }
 }
