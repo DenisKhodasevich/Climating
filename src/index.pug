@@ -1,3 +1,5 @@
+include blocks/header/header
+
 doctype html
 html(lang="en")
   head
@@ -16,3 +18,20 @@ html(lang="en")
     title Climating
 
   body
+    +header({
+      info: {
+        address: '3896 Grant View Drive, Milwaukee, WI',
+        phone: '+1 (800) 123 4567',
+        email: 'company@test.com',
+        workingHours: 'Working hours: 09:00 - 21:00',
+      },
+
+      logo: 'images/logo.png',
+
+      sections: [
+        { link: '#', name: 'about' },
+        { link: '#', name: 'services' },
+        { link: '#', name: 'testimonials' },
+        { link: '#', name: 'contacts' },
+      ],
+    })
