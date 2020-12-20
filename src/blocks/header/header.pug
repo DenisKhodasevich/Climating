@@ -14,12 +14,12 @@ mixin header({ info, logo, sections })
         | #{info.email}
 
       div(class="header__info-item")
-        i(class="header__info-icon material-icons orange-text text-lighten-2") work
+        i(class="header__info-icon material-icons orange-text text-lighten-2") access_time
         | #{info.workingHours}
 
     nav(class="nav-extended indigo darken-2")
       div(class="nav-wrapper")
-        a(href="#" class="brand-logo")
+        a(href="index.html" class="brand-logo")
           img(class="header__logo" alt="logo", src=logo)
 
         a(href="#" data-target="mobile-demo" class="sidenav-trigger")
@@ -28,15 +28,15 @@ mixin header({ info, logo, sections })
         ul(id="nav-mobile" class="right hide-on-med-and-down")
           each item in sections
             li
-              a(class="header__link waves-effect waves-light" href=item.link)=item.name
+              a(class="header__link waves-effect waves-light" href=`#${item}`)=item
 
           li
-            a(class="waves-effect waves-light btn green lighten-2" href="#") to order
+            a(class="waves-effect waves-light btn green lighten-2" href="#order") to order
 
         ul(class="sidenav grey lighten-4" id="mobile-demo")
           each item in sections
             li
-              a(class="header__link waves-effect waves-light" href=item.link)=item.name
+              a(class="header__link waves-effect waves-light" href=`#${item}`)=item
 
           li
-            a(class="waves-effect waves-light btn green lighten-2") to order
+            a(class="waves-effect waves-light btn green lighten-2" href="#order") to order
