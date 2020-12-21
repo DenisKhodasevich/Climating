@@ -17,7 +17,7 @@ mixin header({ info, logo, sections })
         i(class="header__info-icon material-icons orange-text text-lighten-2") access_time
         | #{info.workingHours}
 
-    nav(class="nav-extended indigo darken-2")
+    nav(class="nav-extended indigo darken-2 pushpin")
       div(class="nav-wrapper")
         a(href="index.html" class="brand-logo")
           img(class="header__logo" alt="logo", src=logo)
@@ -33,10 +33,10 @@ mixin header({ info, logo, sections })
           li
             a(class="waves-effect waves-light btn green lighten-2" href="#order") to order
 
-        ul(class="sidenav grey lighten-4" id="mobile-demo")
-          each item in sections
-            li
-              a(class="header__link waves-effect waves-light" href=`#${item}`)=item
+    ul(class="sidenav grey lighten-4" id="mobile-demo")
+      each item in sections
+        li
+          a(class="header__link waves-effect waves-light" href=`#${item}`)=item
 
-          li
-            a(class="waves-effect waves-light btn green lighten-2" href="#order") to order
+      li
+        a(class="waves-effect waves-light btn green lighten-2" href="#order") to order
