@@ -1,8 +1,10 @@
 .header__info {
   display: flex;
   justify-content: space-around;
+  position: relative;
+  z-index: 100;
 
   @media (max-width: 860px) {
-    flex-direction: column;
+    display: none;
   }
 }

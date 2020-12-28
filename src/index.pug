@@ -1,4 +1,5 @@
 include blocks/header/header
+include blocks/home/home
 
 doctype html
 html(lang="en")
@@ -29,3 +30,23 @@ html(lang="en")
       logo: 'images/logo.png',
       sections: ['home', 'about', 'services', 'testimonials', 'contacts'],
     })
+
+    +home([
+      {
+        background: 'images/home-background.jpg',
+        heading: 'air conditioners installation',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
+      },
+
+      {
+        background: 'images/home-background-2.jpg',
+        heading: 'air conditioners repair',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
+      },
+
+      {
+        background: 'images/home-background-3.jpg',
+        heading: 'cleaning air conditioners',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
+      },
+    ])
