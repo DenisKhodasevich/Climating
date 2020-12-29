@@ -1,3 +1,4 @@
+include blocks/preloader/preloader
 include blocks/header/header
 include blocks/home/home
 
@@ -19,6 +20,8 @@ html(lang="en")
     title Climating
 
   body
+    +preloader
+
     +header({
       info: {
         address: '3896 Grant View Drive, Milwaukee, WI',
