@@ -3,9 +3,5 @@
   "env": {
     "browser": true,
     "jquery": true
-  },
-  "rules": {
-    "no-new": "off",
-    "class-methods-use-this": "off"
   }
 }
