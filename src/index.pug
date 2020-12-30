@@ -1,6 +1,4 @@
-include blocks/preloader/preloader
-include blocks/header/header
-include blocks/home/home
+include blocks/page/page
 
 doctype html
 html(lang="en")
@@ -20,36 +18,4 @@ html(lang="en")
     title Climating
 
   body
-    +preloader
-
-    +header({
-      info: {
-        address: '3896 Grant View Drive, Milwaukee, WI',
-        phone: '+1 (800) 123 4567',
-        email: 'company@test.com',
-        workingHours: 'Working hours: 09:00 - 21:00',
-      },
-
-      logo: 'images/logo.png',
-      sections: ['home', 'about', 'services', 'testimonials', 'contacts'],
-    })
-
-    +home([
-      {
-        background: 'images/home-background.jpg',
-        heading: 'air conditioners installation',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
-      },
-
-      {
-        background: 'images/home-background-2.jpg',
-        heading: 'air conditioners repair',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
-      },
-
-      {
-        background: 'images/home-background-3.jpg',
-        heading: 'cleaning air conditioners',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
-      },
-    ])
+    +page
