@@ -1,0 +1,25 @@
+include ../heading/heading
+
+mixin company({ heading, text, video })
+  section.company
+    .parallax-container
+      .parallax
+        img(src="../../images/parallax.jpg" alt="parallax")
+
+    .company__content.light-blue.lighten-5.scrollspy#about
+      .company__text-content
+        .company__heading
+          +heading({
+            level: 'h2',
+            heading: heading,
+            color: 'grey-text text-darken-4',
+          })
+
+        p.company__text.grey-text.text-darken-3=text
+
+      iframe(class="company__video"
+        src=video
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      )

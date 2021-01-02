@@ -1,5 +1,6 @@
 include ../header/header
 include ../home/home
+include ../company/company
 
 mixin page
   main.page
@@ -40,3 +41,10 @@ mixin page
           text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
         },
       ])
+
+    .page__company
+      +company({
+        heading: 'about company',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti fugit dignissimos eveniet animi! Commodi eum mollitia quibusdam repellat perferendis explicabo excepturi cum saepe magnam, voluptatibus cumque rem necessitatibus aspernatur error sit amet eligendi. Itaque illo laboriosam aliquam ad sit eos, assumenda, voluptatibus consequuntur aut quisquam animi nemo, officia porro fugiat sed quae doloribus recusandae distinctio voluptatum error blanditiis inventore tenetur numquam reiciendis? Obcaecati, itaque asperiores, eligendi tempore dolor ipsum rem et, debitis impedit aspernatur molestiae sunt quis nihil! Laboriosam corrupti esse repellat aut, quod id voluptatem dolor adipisci reprehenderit amet illum quas deleniti, sequi ipsam! Dolor alias eum saepe hic!',
+        video: 'https://www.youtube.com/embed/JjG0-w-FupI',
+      })

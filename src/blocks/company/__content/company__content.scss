@@ -1,0 +1,10 @@
+.company__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  @media (max-width: 860px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
