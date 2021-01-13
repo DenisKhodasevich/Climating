@@ -1,0 +1,11 @@
+.services__tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto !important;
+  margin: 1.5rem 0 !important;
+
+  .indicator {
+    display: none;
+  }
+}

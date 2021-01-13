@@ -1,7 +1,7 @@
 include ../heading/heading
 
 mixin home(services)
-  section#home.home.scrollspy
+  #home.home.scrollspy
     .home__services.carousel.carousel-slider.center 
       each item in services
         div(class="home__services-item carousel-item" style=`background-image: url(${item.background})`)

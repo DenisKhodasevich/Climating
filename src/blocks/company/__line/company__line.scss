@@ -1,0 +1,11 @@
+.company__line {
+  height: 0.2rem;
+  border: none;
+  border-radius: 0.1rem;
+  margin: 2rem auto 2rem 0;
+  width: 80%;
+
+  @media (max-width: 860px) {
+    margin-left: auto;
+  }
+}
