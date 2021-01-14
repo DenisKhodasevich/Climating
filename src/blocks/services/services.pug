@@ -9,7 +9,7 @@ mixin services(heading, servicesGroup, services)
         color: 'grey-text text-darken-4',
       })
 
-    ul.services__tabs.tabs
+    ul.services__tabs
       each item in servicesGroup
         li.services__tab.tab
           if(servicesGroup[0] === item)
