@@ -12,12 +12,10 @@ mixin services(heading, servicesGroup, services)
     ul.services__tabs.tabs
       each item in servicesGroup
         li.services__tab.tab
-          -
-            const tabClasses = servicesGroup[0] === item
-              ? 'active grey-text text-darken-4'
-              : 'grey-text text-darken-4';
-
-          a(href=`#${item.id}` class=tabClasses)=item.name
+          if(servicesGroup[0] === item)
+            a(href=`#${item.id}` class="active")=item.name
+          else
+            a(href=`#${item.id}`)=item.name
 
     each item in servicesGroup
       div(id=item.id)
