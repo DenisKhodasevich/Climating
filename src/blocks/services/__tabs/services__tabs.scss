@@ -1,6 +1,7 @@
 .services__tabs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
+  .ui-tabs-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

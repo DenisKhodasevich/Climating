@@ -9,32 +9,30 @@ mixin services(heading, servicesGroup, services)
         color: 'grey-text text-darken-4',
       })
 
-    ul.services__tabs
-      each item in servicesGroup
-        li.services__tab.tab
-          if(servicesGroup[0] === item)
-            a(href=`#${item.id}` class="active")=item.name
-          else
+    .services__tabs
+      ul
+        each item in servicesGroup
+          li.services__tab
             a(href=`#${item.id}`)=item.name
 
-    each item in servicesGroup
-      div(id=item.id)
-        .services__cards
-          each service in services
-            if(service.type === item.id)
-              .services__card.card.hoverable
-                .card-image.waves-effect.waves-block
-                  img(class="activator" alt=service.name src=service.image)
+      each item in servicesGroup
+        div(id=item.id)
+          .services__cards
+            each service in services
+              if(service.type === item.id)
+                .services__card.card.hoverable
+                  .card-image.waves-effect.waves-block
+                    img(class="activator" alt=service.name src=service.image)
 
-                .card-content
-                  span.card-title.activator.grey-text.text-darken-4=service.name
-                    i.material-icons.right more_vert
+                  .card-content
+                    span.card-title.activator.grey-text.text-darken-4=service.name
+                      i.material-icons.right more_vert
 
-                  p
-                    a(href="#order") To order
+                    p
+                      a(href="#order") To order
 
-                .card-reveal
-                  span.card-title.grey-text.text-darken-4=service.name
-                    i.material-icons.right close
+                  .card-reveal
+                    span.card-title.grey-text.text-darken-4=service.name
+                      i.material-icons.right close
 
-                  p=service.description
+                    p=service.description

@@ -10,6 +10,8 @@
   }
 
   @media (max-width: 860px) {
-    position: fixed !important;
+    &.pin-top {
+      position: fixed;
+    }
   }
 }
