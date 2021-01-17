@@ -5,12 +5,6 @@ mixin home(services)
     .home__services.carousel.carousel-slider.center 
       each item in services
         div(class="home__services-item carousel-item" style=`background-image: url(${item.background})`)
-          .home__heading
-            +heading({
-              level: 'h2',
-              heading: item.heading,
-              color: 'white-text',
-            })
-
+          h2.home__heading.white-text=item.heading
           p.home__text.white-text=item.text
           a(class="home__button btn-large waves-effect" href="#order") to order
