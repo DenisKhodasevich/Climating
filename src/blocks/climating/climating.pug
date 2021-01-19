@@ -2,6 +2,7 @@ include ../header/header
 include ../home/home
 include ../company/company
 include ../services/services
+include ../testimonials/testimonials
 
 mixin climating
   .climating
@@ -122,5 +123,26 @@ mixin climating
             name: 'Ventilation Maintenance',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
             image: 'images/ventilation-maintenance.jpg',
+          },
+        ])
+
+      section.climating__testimonials
+        +testimonials('Testimonials', [
+          {
+            photo: 'images/sharleen-stanley.jpg',
+            customer: 'Sharleen Stanley',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+          },
+
+          {
+            photo: 'images/steven-malone.jpg',
+            customer: 'Steven Malone',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+          },
+
+          {
+            photo: 'images/dorothy-watkins.jpg',
+            customer: 'Dorothy Watkins',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
           },
         ])

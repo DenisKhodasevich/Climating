@@ -1,8 +1,6 @@
 .services__tab {
-  &.ui-tabs-active {
-    a {
-      color: #df9527;
-    }
+  &.ui-tabs-active a {
+    color: #df9527;
   }
 
   a {

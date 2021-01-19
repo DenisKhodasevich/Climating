@@ -1,0 +1,25 @@
+include ../heading/heading
+
+mixin testimonials(heading, comments)
+  div(id="testimonials"
+    class="testimonials scrollspy"
+    style="background-image: url(images/feedback.jpg)"
+  )
+    .testimonials__heading
+      +heading({
+        level: 'h2',
+        heading: heading,
+        color: 'white-text',
+      })
+
+    .testimonials__comments.carousel.carousel-slider
+      each item in comments
+        div(class="testimonials__comment carousel-item")
+          div(class="testimonials__photo" style=`background-image: url(${item.photo})`)
+
+          .testimonials__text-content
+            p.white-text
+              <i class="material-icons testimonials__quote">format_quote</i>
+              | #{item.text}
+
+            span.white-text=`— ${item.customer}`

@@ -4,4 +4,8 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  &.ui-tabs .ui-tabs-nav li {
+    margin: 0.2rem;
+  }
 }
