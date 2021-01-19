@@ -1,6 +1,6 @@
 include ../heading/heading
 
-mixin services(heading, servicesGroup, services)
+mixin services({ heading, servicesGroups, services })
   #services.services.scrollspy.white
     .services__heading
       +heading({
@@ -11,11 +11,11 @@ mixin services(heading, servicesGroup, services)
 
     .services__tabs
       ul
-        each item in servicesGroup
+        each item in servicesGroups
           li.services__tab
             a(href=`#${item.id}`)=item.name
 
-      each item in servicesGroup
+      each item in servicesGroups
         div(id=item.id)
           .services__cards
             each service in services

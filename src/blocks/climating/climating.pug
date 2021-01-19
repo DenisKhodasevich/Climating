@@ -53,78 +53,84 @@ mixin climating
         })
 
       section.climating__services
-        +services('Services', [
-          {
-            id: 'household-air-conditioners',
-            name: 'household air conditioners service',
-          },
+        +services({
+          heading: 'Services',
 
-          {
-            id: 'air-conditioning-systems',
-            name: 'air conditioning systems service',
-          },
+          servicesGroups: [
+            {
+              id: 'household-air-conditioners',
+              name: 'household air conditioners service',
+            },
 
-          {
-            id: 'ventilation-systems',
-            name: 'ventilation systems service',
-          },
-        ], [
-          {
-            type: 'household-air-conditioners',
-            name: 'Cleaning',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/cleaning-air-conditioners.jpg',
-          },
+            {
+              id: 'air-conditioning-systems',
+              name: 'air conditioning systems service',
+            },
 
-          {
-            type: 'household-air-conditioners',
-            name: 'Repair',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/air-conditioners-repair.jpg',
-          },
+            {
+              id: 'ventilation-systems',
+              name: 'ventilation systems service',
+            },
+          ],
 
-          {
-            type: 'household-air-conditioners',
-            name: 'Diagnostic',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/air-conditioners-diagnostic.jpg',
-          },
+          services: [
+            {
+              type: 'household-air-conditioners',
+              name: 'Cleaning',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/cleaning-air-conditioners.jpg',
+            },
 
-          {
-            type: 'air-conditioning-systems',
-            name: 'Chiller Repair',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/chiller-repair.jpg',
-          },
+            {
+              type: 'household-air-conditioners',
+              name: 'Repair',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/air-conditioners-repair.jpg',
+            },
 
-          {
-            type: 'air-conditioning-systems',
-            name: 'Repair VRV Systems',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/repair-vrv-systems.jpg',
-          },
+            {
+              type: 'household-air-conditioners',
+              name: 'Diagnostic',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/air-conditioners-diagnostic.jpg',
+            },
 
-          {
-            type: 'air-conditioning-systems',
-            name: 'Fan Coil Repair',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/fan-coil-repair.jpg',
-          },
+            {
+              type: 'air-conditioning-systems',
+              name: 'Chiller Repair',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/chiller-repair.jpg',
+            },
 
-          {
-            type: 'ventilation-systems',
-            name: 'Ventilation Installation',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/ventilation-installation.jpg',
-          },
+            {
+              type: 'air-conditioning-systems',
+              name: 'Repair VRV Systems',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/repair-vrv-systems.jpg',
+            },
 
-          {
-            type: 'ventilation-systems',
-            name: 'Ventilation Maintenance',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
-            image: 'images/ventilation-maintenance.jpg',
-          },
-        ])
+            {
+              type: 'air-conditioning-systems',
+              name: 'Fan Coil Repair',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/fan-coil-repair.jpg',
+            },
+
+            {
+              type: 'ventilation-systems',
+              name: 'Ventilation Installation',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/ventilation-installation.jpg',
+            },
+
+            {
+              type: 'ventilation-systems',
+              name: 'Ventilation Maintenance',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              image: 'images/ventilation-maintenance.jpg',
+            },
+          ],
+        })
 
       section.climating__testimonials
         +testimonials('Testimonials', [
