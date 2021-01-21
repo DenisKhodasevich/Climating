@@ -1,0 +1,27 @@
+include ../heading/heading
+
+mixin contacts({ heading, address, phone, email, workingHours })
+  #contacts.contacts.scrollspy.white
+    .contacts__heading
+      +heading({
+        level: 'h2',
+        heading: heading,
+        color: 'grey-text text-darken-4',
+      })
+
+    .contacts__items
+      .contacts__item
+        i(class="contacts__icon material-icons orange-text text-lighten-2") home
+        span.contacts__text.grey-text.text-darken-4=address
+
+      a(class="contacts__item" href=`tel: ${phone}`)
+        i(class="contacts__icon material-icons orange-text text-lighten-2") phone
+        span.contacts__text.grey-text.text-darken-4=phone
+
+      a(class="contacts__item" href=`mailto: ${email}`)
+        i(class="contacts__icon material-icons orange-text text-lighten-2") email
+        span.contacts__text.grey-text.text-darken-4=email
+
+      .contacts__item
+        i(class="contacts__icon material-icons orange-text text-lighten-2") access_time
+        span.contacts__text.grey-text.text-darken-4=workingHours

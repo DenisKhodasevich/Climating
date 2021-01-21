@@ -3,6 +3,7 @@ include ../home/home
 include ../company/company
 include ../services/services
 include ../testimonials/testimonials
+include ../contacts/contacts
 
 mixin climating
   .climating
@@ -77,56 +78,56 @@ mixin climating
             {
               type: 'household-air-conditioners',
               name: 'Cleaning',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/cleaning-air-conditioners.jpg',
             },
 
             {
               type: 'household-air-conditioners',
               name: 'Repair',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/air-conditioners-repair.jpg',
             },
 
             {
               type: 'household-air-conditioners',
               name: 'Diagnostic',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/air-conditioners-diagnostic.jpg',
             },
 
             {
               type: 'air-conditioning-systems',
               name: 'Chiller Repair',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/chiller-repair.jpg',
             },
 
             {
               type: 'air-conditioning-systems',
               name: 'Repair VRV Systems',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/repair-vrv-systems.jpg',
             },
 
             {
               type: 'air-conditioning-systems',
               name: 'Fan Coil Repair',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/fan-coil-repair.jpg',
             },
 
             {
               type: 'ventilation-systems',
               name: 'Ventilation Installation',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/ventilation-installation.jpg',
             },
 
             {
               type: 'ventilation-systems',
               name: 'Ventilation Maintenance',
-              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+              description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
               image: 'images/ventilation-maintenance.jpg',
             },
           ],
@@ -137,18 +138,27 @@ mixin climating
           {
             photo: 'images/sharleen-stanley.jpg',
             customer: 'Sharleen Stanley',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
           },
 
           {
             photo: 'images/steven-malone.jpg',
             customer: 'Steven Malone',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
           },
 
           {
             photo: 'images/dorothy-watkins.jpg',
             customer: 'Dorothy Watkins',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae blanditiis ipsam dolorem alias vel, aliquid adipisci odit obcaecati reiciendis!',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
           },
         ])
+
+      section.climating__contacts
+        +contacts({
+          heading: 'Contacts',
+          address: '3896 Grant View Drive, Milwaukee, WI',
+          phone: '+1 (800) 123 4567',
+          email: 'company@test.com',
+          workingHours: 'Working hours: 09:00 - 21:00',
+        })

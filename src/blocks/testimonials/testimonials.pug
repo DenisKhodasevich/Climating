@@ -14,12 +14,12 @@ mixin testimonials(heading, comments)
 
     .testimonials__comments.carousel.carousel-slider
       each item in comments
-        div(class="testimonials__comment carousel-item")
+        .testimonials__comment.carousel-item
           div(class="testimonials__photo" style=`background-image: url(${item.photo})`)
 
           .testimonials__text-content
             p.white-text
-              <i class="material-icons testimonials__quote">format_quote</i>
+              i.material-icons.testimonials__quote format_quote
               | #{item.text}
 
             span.testimonials__customer.white-text=`— ${item.customer}`

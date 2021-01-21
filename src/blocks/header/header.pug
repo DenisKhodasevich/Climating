@@ -1,31 +1,31 @@
 mixin header({ info, logo, sections })
   .header
     .header__info.white
-      div(class="header__info-item")
-        i(class="header__info-icon material-icons orange-text text-lighten-2") home
-        | #{info.address}
+      .header__info-item
+        i.header__info-icon.material-icons.orange-text.text-lighten-2 home
+        span.grey-text.text-darken-4=info.address
 
       a(class="header__info-item" href=`tel: ${info.phone}`)
-        i(class="header__info-icon material-icons orange-text text-lighten-2") phone
-        | #{info.phone}
+        i.header__info-icon.material-icons.orange-text.text-lighten-2 phone
+        span.grey-text.text-darken-4=info.phone
 
       a(class="header__info-item" href=`mailto: ${info.email}`)
-        i(class="header__info-icon material-icons orange-text text-lighten-2") email
-        | #{info.email}
+        i.header__info-icon.material-icons.orange-text.text-lighten-2 email
+        span.grey-text.text-darken-4=info.email
 
-      div(class="header__info-item")
-        i(class="header__info-icon material-icons orange-text text-lighten-2") access_time
-        | #{info.workingHours}
+      .header__info-item
+        i.header__info-icon.material-icons.orange-text.text-lighten-2 access_time
+        span.grey-text.text-darken-4=info.workingHours
 
-    nav(class="header__nav nav-extended indigo darken-2 pushpin")
-      div(class="nav-wrapper")
+    nav.header__nav.nav-extended.indigo.darken-2.pushpin
+      .nav-wrapper
         a(href="index.html" class="brand-logo")
           img(class="header__logo" alt="logo", src=logo)
 
         a(href="#" data-target="mobile-demo" class="sidenav-trigger")
           i(class="material-icons") menu
 
-        ul(id="nav-mobile" class="right hide-on-med-and-down")
+        ul#nav-mobile.right.hide-on-med-and-down
           each item in sections
             li
               a(class="header__link waves-effect waves-light" href=`#${item}`)=item
@@ -33,7 +33,7 @@ mixin header({ info, logo, sections })
           li
             a(class="waves-effect waves-light btn" href="#order") to order
 
-    ul(class="sidenav grey lighten-4" id="mobile-demo")
+    ul.sidenav.grey.lighten-4#mobile-demo
       each item in sections
         li
           a(class="header__link waves-effect" href=`#${item}`)=item

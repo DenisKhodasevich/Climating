@@ -6,7 +6,7 @@ mixin company({ heading, text, video })
       .parallax
         img(src="../../images/parallax.jpg" alt="parallax")
 
-    .company__content.light-blue.lighten-5.scrollspy#about
+    .company__content.indigo.lighten-5.scrollspy#about
       .company__text-content
         .company__heading
           +heading({
@@ -14,8 +14,7 @@ mixin company({ heading, text, video })
             heading: heading,
             color: 'grey-text text-darken-4',
           })
-        
-        hr.company__line.teal.lighten-2
+
         p.company__text.grey-text.text-darken-3=text
 
       iframe(class="company__video"

@@ -1,9 +1,15 @@
 .home__services {
   min-height: 100vh;
 
-  &.carousel.carousel-slider .carousel-item h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1.3;
+  &.carousel.carousel-slider .carousel-item {
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
   }
 }
