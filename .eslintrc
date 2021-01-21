@@ -3,5 +3,8 @@
   "env": {
     "browser": true,
     "jquery": true
+  },
+  "rules": {
+    "func-names": "off"
   }
 }

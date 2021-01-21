@@ -3,10 +3,6 @@
 
   .active {
     background-color: rgba(0, 0, 0, 0.1);
-  
-    &.btn {
-      background-color: rgba(38, 166, 154, 0.7);
-    }
   }
 
   @media (max-width: 860px) {

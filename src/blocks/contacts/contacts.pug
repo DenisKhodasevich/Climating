@@ -11,17 +11,17 @@ mixin contacts({ heading, address, phone, email, workingHours })
 
     .contacts__items
       .contacts__item
-        i(class="contacts__icon material-icons orange-text text-lighten-2") home
+        i(class="material-icons medium orange-text text-lighten-2") home
         span.contacts__text.grey-text.text-darken-4=address
 
       a(class="contacts__item" href=`tel: ${phone}`)
-        i(class="contacts__icon material-icons orange-text text-lighten-2") phone
+        i(class="material-icons medium orange-text text-lighten-2") phone
         span.contacts__text.grey-text.text-darken-4=phone
 
       a(class="contacts__item" href=`mailto: ${email}`)
-        i(class="contacts__icon material-icons orange-text text-lighten-2") email
+        i(class="material-icons medium orange-text text-lighten-2") email
         span.contacts__text.grey-text.text-darken-4=email
 
       .contacts__item
-        i(class="contacts__icon material-icons orange-text text-lighten-2") access_time
+        i(class="material-icons medium orange-text text-lighten-2") access_time
         span.contacts__text.grey-text.text-darken-4=workingHours

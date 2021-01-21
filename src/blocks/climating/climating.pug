@@ -4,12 +4,15 @@ include ../company/company
 include ../services/services
 include ../testimonials/testimonials
 include ../contacts/contacts
+include ../order/order
 
 mixin climating
   .climating
     .climating__preloader.white
       .climating__preloader-progress.progress
         .indeterminate
+
+    +order
 
     header.climating__header
       +header({
