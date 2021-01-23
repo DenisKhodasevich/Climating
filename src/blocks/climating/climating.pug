@@ -160,8 +160,36 @@ mixin climating
       section.climating__contacts
         +contacts({
           heading: 'Contacts',
-          address: '3896 Grant View Drive, Milwaukee, WI',
-          phone: '+1 (800) 123 4567',
-          email: 'company@test.com',
-          workingHours: 'Working hours: 09:00 - 21:00',
+
+          info: {
+            address: '3896 Grant View Drive, Milwaukee, WI',
+            phone: '+1 (800) 123 4567',
+            email: 'company@test.com',
+            workingHours: 'Working hours: 09:00 - 21:00',
+          },
+
+          socialNetworks: [
+            {
+              image: 'images/facebook.svg',
+              name: 'facebook',
+              link: '#',
+            },
+
+            {
+              image: 'images/twitter.svg',
+              name: 'twitter',
+              link: '#',
+            },
+
+            {
+              image: 'images/instagram.svg',
+              name: 'instagram',
+              link: '#',
+            },
+          ],
+
+          map: 'https://cutt.ly/KjK3D5U',
         })
+
+    footer.climating__footer.grey.darken-3
+      p.white-text Copyright © 2021. All rights reserved.

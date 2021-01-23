@@ -1,21 +1,9 @@
+include ../info/info
+
 mixin header({ info, logo, sections })
   .header
     .header__info.white
-      .header__info-item
-        i.header__info-icon.material-icons.orange-text.text-lighten-2 home
-        span.grey-text.text-darken-4=info.address
-
-      a(class="header__info-item" href=`tel: ${info.phone}`)
-        i.header__info-icon.material-icons.orange-text.text-lighten-2 phone
-        span.grey-text.text-darken-4=info.phone
-
-      a(class="header__info-item" href=`mailto: ${info.email}`)
-        i.header__info-icon.material-icons.orange-text.text-lighten-2 email
-        span.grey-text.text-darken-4=info.email
-
-      .header__info-item
-        i.header__info-icon.material-icons.orange-text.text-lighten-2 access_time
-        span.grey-text.text-darken-4=info.workingHours
+      +info(info)
 
     nav.header__nav.nav-extended.indigo.darken-2.pushpin
       .nav-wrapper

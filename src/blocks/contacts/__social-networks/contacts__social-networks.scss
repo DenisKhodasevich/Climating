@@ -1,0 +1,8 @@
+.contacts__social-networks {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+}

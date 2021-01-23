@@ -1,0 +1,17 @@
+mixin info({ address, phone, email, workingHours })
+  .info
+    .info__item
+      i.info__icon.material-icons.orange-text.text-lighten-2 home
+      span.grey-text.text-darken-4=address
+
+    a(class="info__item info__link" href=`tel: ${phone}`)
+      i.info__icon.material-icons.orange-text.text-lighten-2 phone
+      span.grey-text.text-darken-4=phone
+
+    a(class="info__item info__link" href=`mailto: ${email}`)
+      i.info__icon.material-icons.orange-text.text-lighten-2 email
+      span.grey-text.text-darken-4=email
+
+    .info__item
+      i.info__icon.material-icons.orange-text.text-lighten-2 access_time
+      span.grey-text.text-darken-4=workingHours
