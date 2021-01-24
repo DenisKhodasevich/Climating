@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const webpack = require('webpack');
 
 const PATHS = {
@@ -84,7 +83,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: `${PATHS.src}/index.pug`,
+      template: `${PATHS.src}/blocks/climating/climating.pug`,
     }),
 
     new MiniCssExtractPlugin({ filename: '[name].css' }),
@@ -94,8 +93,6 @@ module.exports = {
       to: `${PATHS.dist}/images`,
       flatten: true,
     }]),
-
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
 
     new webpack.ProvidePlugin({
       $: 'jquery',
