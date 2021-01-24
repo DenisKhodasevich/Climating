@@ -4,7 +4,7 @@ mixin company({ heading, text, video })
   .company
     .company__parallax.parallax-container
       .parallax
-        img(src="../../images/parallax.jpg" alt="parallax")
+        img(src="images/parallax.jpg" alt="parallax")
 
     .company__content.indigo.lighten-5.scrollspy#about
       .company__text-content
@@ -19,7 +19,6 @@ mixin company({ heading, text, video })
 
       iframe(class="company__video"
         src=video
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       )
