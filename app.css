@@ -8,7 +8,7 @@
 @media (max-width:860px){.company__parallax{display:none}}
 .company__text-content{width:45%}@media (max-width:860px){.company__text-content{width:100%}}
 .company__text{line-height:1.7}
-.company__video{width:50%;max-width:53rem;height:30rem}@media (max-width:860px){.company__video{width:100%;margin-top:1rem}}
+.company__video{width:50%;max-width:53rem;height:30rem;border:0}@media (max-width:860px){.company__video{width:100%;margin-top:1rem}}
 .contacts__heading{text-align:center}
 .contacts__image{width:1.5rem}
 .contacts__items{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;margin-top:2rem}@media (max-width:1024px){.contacts__items{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__items .info{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}
