@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="keywords" content="conditioners repair, conditioners maintenance">
+    <meta name="description" content="Air conditioner repair and maintenance company">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Climating</title>
+  <link href="app.css" rel="stylesheet"></head>
+  <body>
+    <div class="climating">
+      <div class="climating__preloader white">
+        <div class="climating__preloader-progress progress">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+      <div class="order modal" id="order">
+        <div class="modal-content">
+          <h4>Order Service</h4>
+          <form class="order__form">
+            <div class="input-field"><i class="material-icons prefix">account_circle</i>
+              <input class="validate" id="customer-name" type="text" name="customer-name">
+              <label for="customer-name">Your Name</label>
+            </div>
+            <div class="input-field"><i class="material-icons prefix">phone</i>
+              <input class="validate" id="customer-phone" type="tel" name="customer-phone">
+              <label for="customer-phone">Your Phone</label>
+            </div>
+            <div class="input-field"><i class="material-icons prefix">build</i>
+              <input class="validate" id="selected-service" type="text" name="selected-service">
+              <label for="selected-service">Selected Service</label>
+            </div>
+            <div class="input-field"><i class="material-icons prefix">comment</i>
+              <textarea class="materialize-textarea validate" id="customer-comment" name="customer-comment"></textarea>
+              <label for="customer-comment">Your Comment</label>
+            </div>
+            <button class="btn btn-large waves-effect">order</button>
+          </form>
+        </div>
+      </div>
+      <header class="climating__header">
+        <div class="header">
+          <div class="header__info white">
+            <div class="info">
+              <div class="info__item"><i class="info__icon material-icons orange-text text-lighten-2">home</i><span class="grey-text text-darken-4">3896 Grant View Drive, Milwaukee, WI</span></div><a class="info__item info__link" href="tel: +1 (800) 123 4567"><i class="info__icon material-icons orange-text text-lighten-2">phone</i><span class="grey-text text-darken-4">+1 (800) 123 4567</span></a><a class="info__item info__link" href="mailto: company@test.com"><i class="info__icon material-icons orange-text text-lighten-2">email</i><span class="grey-text text-darken-4">company@test.com</span></a>
+              <div class="info__item"><i class="info__icon material-icons orange-text text-lighten-2">access_time</i><span class="grey-text text-darken-4">Working hours: 09:00 - 21:00</span></div>
+            </div>
+          </div>
+          <nav class="header__nav nav-extended indigo darken-2 pushpin">
+            <div class="nav-wrapper"><a class="brand-logo" href="index.html"><img class="header__logo" alt="logo" src="images/logo.png"></a><a class="sidenav-trigger" href="#" data-target="mobile-demo"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down" id="nav-mobile">
+                <li><a class="header__link waves-effect waves-light" href="#home">home</a></li>
+                <li><a class="header__link waves-effect waves-light" href="#about">about</a></li>
+                <li><a class="header__link waves-effect waves-light" href="#services">services</a></li>
+                <li><a class="header__link waves-effect waves-light" href="#testimonials">testimonials</a></li>
+                <li><a class="header__link waves-effect waves-light" href="#contacts">contacts</a></li>
+                <li><a class="waves-effect waves-light btn modal-trigger" data-target="order">to order</a></li>
+              </ul>
+            </div>
+          </nav>
+          <ul class="sidenav grey lighten-4" id="mobile-demo">
+            <li><a class="header__link waves-effect" href="#home">home</a></li>
+            <li><a class="header__link waves-effect" href="#about">about</a></li>
+            <li><a class="header__link waves-effect" href="#services">services</a></li>
+            <li><a class="header__link waves-effect" href="#testimonials">testimonials</a></li>
+            <li><a class="header__link waves-effect" href="#contacts">contacts</a></li>
+            <li><a class="waves-effect btn modal-trigger" data-target="order">to order</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="climating__main">
+        <section class="climating__home">
+          <div class="home scrollspy" id="home">
+            <div class="home__services carousel carousel-slider center"> 
+              <div class="home__services-item carousel-item" style="background-image: url(images/home-background.jpg)">
+                <div class="home__content">
+                  <h2 class="home__heading white-text">Air Conditioners Installation</h2>
+                  <p class="home__text white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!</p><a class="home__button btn-large waves-effect modal-trigger" data-target="order">to order</a>
+                </div>
+              </div>
+              <div class="home__services-item carousel-item" style="background-image: url(images/home-background-2.jpg)">
+                <div class="home__content">
+                  <h2 class="home__heading white-text">Air Conditioners Repair</h2>
+                  <p class="home__text white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!</p><a class="home__button btn-large waves-effect modal-trigger" data-target="order">to order</a>
+                </div>
+              </div>
+              <div class="home__services-item carousel-item" style="background-image: url(images/home-background-3.jpg)">
+                <div class="home__content">
+                  <h2 class="home__heading white-text">Cleaning Air Conditioners</h2>
+                  <p class="home__text white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!</p><a class="home__button btn-large waves-effect modal-trigger" data-target="order">to order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="climating__company">
+          <div class="company">
+            <div class="company__parallax parallax-container">
+              <div class="parallax"><img src="../../images/parallax.jpg" alt="parallax"></div>
+            </div>
+            <div class="company__content indigo lighten-5 scrollspy" id="about">
+              <div class="company__text-content">
+                <div class="company__heading">
+                  <h2 class="heading grey-text text-darken-4">About Company</h2>
+                </div>
+                <p class="company__text grey-text text-darken-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti fugit dignissimos eveniet animi! Commodi eum mollitia quibusdam repellat perferendis explicabo excepturi cum saepe magnam, voluptatibus cumque rem necessitatibus aspernatur error sit amet eligendi. Itaque illo laboriosam aliquam ad sit eos, assumenda, voluptatibus consequuntur aut quisquam animi nemo, officia porro fugiat sed quae doloribus recusandae distinctio voluptatum error blanditiis inventore tenetur numquam reiciendis? Obcaecati, itaque asperiores, eligendi tempore dolor ipsum rem et, debitis impedit aspernatur molestiae sunt quis nihil! Laboriosam corrupti esse repellat aut, quod id voluptatem dolor adipisci reprehenderit amet illum quas deleniti, sequi ipsam! Dolor alias eum saepe hic!</p>
+              </div>
+              <iframe class="company__video" src="https://www.youtube.com/embed/JjG0-w-FupI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="climating__services">
+          <div class="services scrollspy white" id="services">
+            <div class="services__heading">
+              <h2 class="heading grey-text text-darken-4">Services</h2>
+            </div>
+            <div class="services__tabs">
+              <ul>
+                <li class="services__tab"><a href="#household-air-conditioners">household air conditioners service</a></li>
+                <li class="services__tab"><a href="#air-conditioning-systems">air conditioning systems service</a></li>
+                <li class="services__tab"><a href="#ventilation-systems">ventilation systems service</a></li>
+              </ul>
+              <div id="household-air-conditioners">
+                <div class="services__cards">
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Cleaning" src="images/cleaning-air-conditioners.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Cleaning<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Cleaning<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Repair" src="images/air-conditioners-repair.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Repair<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Repair<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Diagnostic" src="images/air-conditioners-diagnostic.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Diagnostic<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Diagnostic<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="air-conditioning-systems">
+                <div class="services__cards">
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Chiller Repair" src="images/chiller-repair.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Chiller Repair<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Chiller Repair<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Repair VRV Systems" src="images/repair-vrv-systems.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Repair VRV Systems<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Repair VRV Systems<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Fan Coil Repair" src="images/fan-coil-repair.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Fan Coil Repair<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Fan Coil Repair<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="ventilation-systems">
+                <div class="services__cards">
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Ventilation Installation" src="images/ventilation-installation.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Ventilation Installation<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Ventilation Installation<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                  <div class="services__card card hoverable">
+                    <div class="card-image waves-effect waves-block"><img class="activator" alt="Ventilation Maintenance" src="images/ventilation-maintenance.jpg"></div>
+                    <div class="card-content"><span class="card-title activator grey-text text-darken-4">Ventilation Maintenance<i class="material-icons right">more_vert</i></span>
+                      <p><a class="modal-trigger" data-target="order" href="#">To order</a></p>
+                    </div>
+                    <div class="card-reveal"><span class="card-title grey-text text-darken-4">Ventilation Maintenance<i class="material-icons right">close</i></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="climating__testimonials">
+          <div class="testimonials scrollspy" id="testimonials" style="background-image: url(images/feedback.jpg)">
+            <div class="testimonials__heading">
+              <h2 class="heading white-text">Testimonials</h2>
+            </div>
+            <div class="testimonials__comments carousel carousel-slider">
+              <div class="testimonials__comment carousel-item">
+                <div class="testimonials__photo" style="background-image: url(images/sharleen-stanley.jpg)"></div>
+                <div class="testimonials__text-content">
+                  <p class="white-text"><i class="material-icons testimonials__quote">format_quote</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p><span class="testimonials__customer white-text">— Sharleen Stanley</span>
+                </div>
+              </div>
+              <div class="testimonials__comment carousel-item">
+                <div class="testimonials__photo" style="background-image: url(images/steven-malone.jpg)"></div>
+                <div class="testimonials__text-content">
+                  <p class="white-text"><i class="material-icons testimonials__quote">format_quote</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p><span class="testimonials__customer white-text">— Steven Malone</span>
+                </div>
+              </div>
+              <div class="testimonials__comment carousel-item">
+                <div class="testimonials__photo" style="background-image: url(images/dorothy-watkins.jpg)"></div>
+                <div class="testimonials__text-content">
+                  <p class="white-text"><i class="material-icons testimonials__quote">format_quote</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.</p><span class="testimonials__customer white-text">— Dorothy Watkins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="climating__contacts">
+          <div class="contacts scrollspy white" id="contacts">
+            <div class="contacts__heading">
+              <h2 class="heading grey-text text-darken-4">Contacts</h2>
+            </div>
+            <div class="contacts__items">
+              <div class="contacts__items-group">
+                <div class="info">
+                  <div class="info__item"><i class="info__icon material-icons orange-text text-lighten-2">home</i><span class="grey-text text-darken-4">3896 Grant View Drive, Milwaukee, WI</span></div><a class="info__item info__link" href="tel: +1 (800) 123 4567"><i class="info__icon material-icons orange-text text-lighten-2">phone</i><span class="grey-text text-darken-4">+1 (800) 123 4567</span></a><a class="info__item info__link" href="mailto: company@test.com"><i class="info__icon material-icons orange-text text-lighten-2">email</i><span class="grey-text text-darken-4">company@test.com</span></a>
+                  <div class="info__item"><i class="info__icon material-icons orange-text text-lighten-2">access_time</i><span class="grey-text text-darken-4">Working hours: 09:00 - 21:00</span></div>
+                </div>
+                <div class="contacts__social-networks"><a class="contacts__link btn-floating" href="#"><img class="contacts__image" src="images/facebook.svg" alt="facebook"></a><a class="contacts__link btn-floating" href="#"><img class="contacts__image" src="images/twitter.svg" alt="twitter"></a><a class="contacts__link btn-floating" href="#"><img class="contacts__image" src="images/instagram.svg" alt="instagram"></a>
+                </div>
+              </div>
+              <iframe class="contacts__map" src="https://cutt.ly/KjK3D5U" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="climating__footer grey darken-3">
+        <p class="white-text">Copyright © 2021. All rights reserved.</p>
+      </footer>
+    </div>
+  <script type="text/javascript" src="app.js"></script></body>
+</html>
