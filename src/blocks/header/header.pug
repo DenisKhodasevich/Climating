@@ -7,8 +7,9 @@ mixin header({ info, logo, sections })
 
     nav.header__nav.nav-extended.indigo.darken-2.pushpin
       .nav-wrapper
-        a(href="index.html" class="brand-logo")
-          img(class="header__logo" alt="logo", src=logo)
+        a(href="index.html" class="brand-logo header__logo")
+          img(alt="logo", src=logo.image)
+          | #{logo.text}
 
         a(href="#" data-target="mobile-demo" class="sidenav-trigger")
           i(class="material-icons") menu
