@@ -1,7 +1,7 @@
 {
   "name": "climating",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page template for organizations dealing with air conditioning repair.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.config.js",
@@ -13,7 +13,7 @@
     "> 1%",
     "last 3 version"
   ],
-  "author": "",
+  "author": "Denis Khodasevich",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.16.0",
