@@ -1,7 +1,4 @@
 # Climating
-
-Landing page template for organizations dealing with air conditioning repair.
-
 [Live Preview](https://deniskhodasevich.github.io/Climating/)
 
 ## The project uses
