@@ -1,5 +1,5 @@
 # Climating
-[Live Preview](https://deniskhodasevich.github.io/Climating/)
+[Live Preview](https://deniskhodasevich.github.io/climating/)
 
 ## The project uses
 - [BEM](https://bem.info)
