@@ -83,7 +83,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: `${PATHS.src}/blocks/climating/climating.pug`,
+      template: `${PATHS.src}/blocks/climating.pug`,
     }),
 
     new MiniCssExtractPlugin({ filename: '[name].css' }),

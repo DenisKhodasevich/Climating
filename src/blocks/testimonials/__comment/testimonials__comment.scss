@@ -1,9 +1,0 @@
-.testimonials__comment {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 450px) {
-    flex-direction: column;
-  }
-}

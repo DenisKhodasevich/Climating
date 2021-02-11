@@ -1,0 +1,57 @@
+.testimonials {
+  padding: 3rem 2rem;
+  background: center / cover no-repeat fixed;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__comments.carousel {
+    .indicators {
+      bottom: -2rem;
+    }
+
+    &.carousel-slider .carousel-item p {
+      font-size: 1.15rem;
+    }
+  }
+
+  &__comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+  }
+
+  &__photo {
+    min-width: 7rem;
+    max-width: 7rem;
+    min-height: 7rem;
+    max-height: 7rem;
+    background: center / cover no-repeat;
+    border-radius: 50%;
+    border: 0.2rem solid #bcaaa4;
+  }
+
+  &__text-content {
+    margin-left: 1rem;
+    max-width: 50rem;
+
+    @media (max-width: 450px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__quote {
+    vertical-align: text-bottom;
+    margin-right: 0.1rem;
+    color: #df9527;
+  }
+
+  &__customer {
+    font-weight: 300;
+  }
+}

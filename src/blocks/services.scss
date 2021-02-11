@@ -1,0 +1,62 @@
+.services {
+  padding: 3rem 2rem;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__tabs {
+    .ui-tabs-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &.ui-tabs .ui-tabs-nav li {
+      margin: 0.2rem;
+    }
+  }
+
+  &__tab {
+    &.ui-tabs-active a {
+      color: #df9527;
+    }
+
+    a {
+      outline: none;
+      text-transform: uppercase;
+      color: #424242;
+
+      &:focus {
+        color: #df9527;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    max-width: 24rem;
+    min-width: 19rem;
+
+    &.card {
+      margin: 1rem;
+
+      .card-content .card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .card-reveal .card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

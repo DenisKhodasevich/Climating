@@ -1,0 +1,212 @@
+include order
+include header
+include home
+include company
+include services
+include testimonials
+include contacts
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name="keywords" content="conditioners repair, conditioners maintenance")
+    meta(name="description" content="Air conditioner repair and maintenance company")
+    link(rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png")
+    link(rel="manifest" href="favicons/site.webmanifest")
+    link(rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="theme-color" content="#ffffff")
+    title Climating
+
+  body
+    .climating
+      .climating__preloader.white
+        .climating__preloader-progress.progress
+          .indeterminate
+
+      +order
+
+      header.climating__header
+        +header({
+          info: {
+            address: '3896 Grant View Drive, Milwaukee, WI',
+            phone: ['+1 (800) 1234567', '+18001234567'],
+            email: 'company@test.com',
+            workingHours: 'Working hours: 09:00 - 21:00',
+          },
+
+          logo: { image: 'images/air-conditioner.svg', text: 'Climating' },
+          sections: ['home', 'about', 'services', 'testimonials', 'contacts'],
+        })
+
+      main.climating__main
+        section.climating__home
+          +home([
+            {
+              background: 'images/home-background.jpg',
+              heading: 'Air Conditioners Installation',
+              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
+            },
+
+            {
+              background: 'images/home-background-2.jpg',
+              heading: 'Air Conditioners Repair',
+              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
+            },
+
+            {
+              background: 'images/home-background-3.jpg',
+              heading: 'Cleaning Air Conditioners',
+              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, commodi!',
+            },
+          ])
+
+        section.climating__company
+          +company({
+            heading: 'About Company',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti fugit dignissimos eveniet animi! Commodi eum mollitia quibusdam repellat perferendis explicabo excepturi cum saepe magnam, voluptatibus cumque rem necessitatibus aspernatur error sit amet eligendi. Itaque illo laboriosam aliquam ad sit eos, assumenda, voluptatibus consequuntur aut quisquam animi nemo, officia porro fugiat sed quae doloribus recusandae distinctio voluptatum error blanditiis inventore tenetur numquam reiciendis? Obcaecati, itaque asperiores, eligendi tempore dolor ipsum rem et, debitis impedit aspernatur molestiae sunt quis nihil! Laboriosam corrupti esse repellat aut, quod id voluptatem dolor adipisci reprehenderit amet illum quas deleniti, sequi ipsam! Dolor alias eum saepe hic!',
+            video: 'https://www.youtube.com/embed/JjG0-w-FupI',
+          })
+
+        section.climating__services
+          +services({
+            heading: 'Services',
+
+            servicesGroups: [
+              {
+                id: 'household-air-conditioners',
+                name: 'household air conditioners service',
+              },
+
+              {
+                id: 'air-conditioning-systems',
+                name: 'air conditioning systems service',
+              },
+
+              {
+                id: 'ventilation-systems',
+                name: 'ventilation systems service',
+              },
+            ],
+
+            services: [
+              {
+                type: 'household-air-conditioners',
+                name: 'Cleaning',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/cleaning-air-conditioners.jpg',
+              },
+
+              {
+                type: 'household-air-conditioners',
+                name: 'Repair',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/air-conditioners-repair.jpg',
+              },
+
+              {
+                type: 'household-air-conditioners',
+                name: 'Diagnostic',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/air-conditioners-diagnostic.jpg',
+              },
+
+              {
+                type: 'air-conditioning-systems',
+                name: 'Chiller Repair',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/chiller-repair.jpg',
+              },
+
+              {
+                type: 'air-conditioning-systems',
+                name: 'Repair VRV Systems',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/repair-vrv-systems.jpg',
+              },
+
+              {
+                type: 'air-conditioning-systems',
+                name: 'Fan Coil Repair',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/fan-coil-repair.jpg',
+              },
+
+              {
+                type: 'ventilation-systems',
+                name: 'Ventilation Installation',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/ventilation-installation.jpg',
+              },
+
+              {
+                type: 'ventilation-systems',
+                name: 'Ventilation Maintenance',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+                image: 'images/ventilation-maintenance.jpg',
+              },
+            ],
+          })
+
+        section.climating__testimonials
+          +testimonials('Testimonials', [
+            {
+              photo: 'images/sharleen-stanley.jpg',
+              customer: 'Sharleen Stanley',
+              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+            },
+
+            {
+              photo: 'images/steven-malone.jpg',
+              customer: 'Steven Malone',
+              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+            },
+
+            {
+              photo: 'images/dorothy-watkins.jpg',
+              customer: 'Dorothy Watkins',
+              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis enim quia, iure illum ut dignissimos ea ipsum dolorem saepe reiciendis repudiandae excepturi architecto fugiat eum magnam error numquam reprehenderit.',
+            },
+          ])
+
+        section.climating__contacts
+          +contacts({
+            heading: 'Contacts',
+
+            info: {
+              address: '3896 Grant View Drive, Milwaukee, WI',
+              phone: ['+1 (800) 1234567', '+18001234567'],
+              email: 'company@test.com',
+              workingHours: 'Working hours: 09:00 - 21:00',
+            },
+
+            socialNetworks: [
+              {
+                image: 'images/facebook.svg',
+                name: 'facebook',
+                link: '#',
+              },
+
+              {
+                image: 'images/twitter.svg',
+                name: 'twitter',
+                link: '#',
+              },
+
+              {
+                image: 'images/instagram.svg',
+                name: 'instagram',
+                link: '#',
+              },
+            ],
+
+            map: 'https://cutt.ly/KjK3D5U',
+          })
+
+      footer.climating__footer.grey.darken-3
+        p.white-text Copyright © 2021. All rights reserved.

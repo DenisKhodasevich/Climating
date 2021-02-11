@@ -1,0 +1,11 @@
+include heading
+
+mixin home(services)
+  #home.home.scrollspy
+    .home__services.carousel.carousel-slider.center 
+      each item in services
+        div(class="home__services-item carousel-item" style=`background-image: url(${item.background})`)
+          .home__content
+            h2.home__heading.white-text=item.heading
+            p.home__text.white-text=item.text
+            a(class="home__button btn-large waves-effect modal-trigger" data-target="order") to order

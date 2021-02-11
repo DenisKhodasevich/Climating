@@ -1,0 +1,31 @@
+include info
+
+mixin header({ info, logo, sections })
+  .header
+    .header__info.white
+      +info(info)
+
+    nav.header__nav.nav-extended.indigo.darken-2.pushpin
+      .nav-wrapper
+        a(href="index.html" class="brand-logo header__logo")
+          img(alt="logo", src=logo.image)
+          | #{logo.text}
+
+        a(href="#" data-target="mobile-demo" class="sidenav-trigger")
+          i(class="material-icons") menu
+
+        ul#nav-mobile.right.hide-on-med-and-down
+          each item in sections
+            li
+              a(class="header__link waves-effect waves-light" href=`#${item}`)=item
+
+          li
+            a(class="waves-effect waves-light btn modal-trigger" data-target="order") to order
+
+    ul.sidenav.grey.lighten-4#mobile-demo
+      each item in sections
+        li
+          a(class="header__link waves-effect" href=`#${item}`)=item
+
+      li
+        a(class="waves-effect btn modal-trigger" data-target="order") to order

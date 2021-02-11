@@ -1,0 +1,48 @@
+.company {
+  &__parallax {
+    @media (max-width: 860px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+
+    @media (max-width: 860px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text-content {
+    width: 45%;
+
+    @media (max-width: 860px) {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    @media (max-width: 860px) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    line-height: 1.7;
+  }
+
+  &__video {
+    width: 50%;
+    max-width: 53rem;
+    height: 30rem;
+    border: 0;
+
+    @media (max-width: 860px) {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}
